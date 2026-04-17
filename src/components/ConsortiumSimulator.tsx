@@ -303,16 +303,16 @@ export default function ConsortiumSimulator() {
             </div>
           </div>
 
-          <div className="flex justify-between items-center pt-4">
+          <div className="flex flex-col-reverse md:flex-row justify-between items-center gap-4 pt-4">
             <button
               onClick={prevStep}
-              className="text-sm font-bold text-slate-400 hover:text-slate-600 transition-colors flex items-center gap-2"
+              className="w-full md:w-auto text-sm font-bold text-slate-400 hover:text-slate-600 transition-colors flex items-center justify-center gap-2"
             >
               <ArrowLeft size={18} /> Voltar
             </button>
             <button
               onClick={nextStep}
-              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold flex items-center gap-2 shadow-lg shadow-blue-100 transition-all active:scale-95"
+              className="w-full md:w-auto bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold flex items-center justify-center gap-2 shadow-lg shadow-blue-100 transition-all active:scale-95"
             >
               Próxima Etapa: Contato <ArrowRight size={18} />
             </button>
@@ -377,18 +377,18 @@ export default function ConsortiumSimulator() {
           </div>
         </div>
 
-        <div className="flex justify-between items-center pt-8 mt-auto">
+        <div className="flex flex-col-reverse md:flex-row justify-between items-center gap-4 pt-8 mt-auto">
           <button
             type="button"
             onClick={prevStep}
-            className="text-sm font-bold text-slate-400 hover:text-slate-600 transition-colors flex items-center gap-2"
+            className="w-full md:w-auto text-sm font-bold text-slate-400 hover:text-slate-600 transition-colors flex items-center justify-center gap-2"
           >
             <ArrowLeft size={18} /> Voltar para Simulação
           </button>
           <button
             type="submit"
             disabled={isLoading}
-            className="bg-blue-600 hover:bg-blue-700 disabled:bg-slate-300 text-white px-8 py-4 rounded-xl font-bold flex items-center gap-2 shadow-lg shadow-blue-100 transition-all active:scale-95"
+            className="w-full md:w-auto bg-blue-600 hover:bg-blue-700 disabled:bg-slate-300 text-white px-8 py-4 rounded-xl font-bold flex items-center justify-center gap-2 shadow-lg shadow-blue-100 transition-all active:scale-95"
           >
             {isLoading ? (
               <Loader2 className="animate-spin" />
